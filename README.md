@@ -1,6 +1,6 @@
-# PROJECT NAME HERE
+# Win the NBA Champioship
 
-### Level 3 Programming Project by YOUR NAME HERE
+### Level 3 Programming Project by Coen Williams
 
 This project is assessed against [AS91906](https://www.nzqa.govt.nz/nqfdocs/ncea-resource/achievements/2019/as91906.pdf)
 
@@ -8,10 +8,8 @@ This project is assessed against [AS91906](https://www.nzqa.govt.nz/nqfdocs/ncea
 
 The project involves the programming of a game.
 
-BRIEF PROJECT DESCRIPTION HERE
-BRIEF PROJECT DESCRIPTION HERE
-BRIEF PROJECT DESCRIPTION HERE
-BRIEF PROJECT DESCRIPTION HERE
+Users will aim to try and complete a maze. They will be given obstacles such as
+walls and dead ends that will make completing said maze harder.
 
 
 ## Source Code
