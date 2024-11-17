@@ -1,4 +1,4 @@
-# Win the NBA Champioship
+# Win the NBA Championship
 
 ### Level 3 Programming Project by Coen Williams
 
