@@ -23,6 +23,7 @@ import javax.swing.*
 
 /**
  * Team class representing a match with possible directions to move.
+ * Match class representing the player with possible directions to move.
  */
 class Match(val name: String, val x: Int, val y: Int) {
     var north: Match? = null
@@ -114,6 +115,10 @@ class GUI : JFrame(), KeyListener {
     private fun buildUI() {
         val baseFont = Font(Font.SANS_SERIF, Font.PLAIN, 14)
 
+        /**
+         * Instruction Table
+         */
+
         instructionsLabel = JLabel("INSTRUCTIONS:", SwingConstants.CENTER)
         instructionsLabel.bounds = Rectangle(70,35,200,20)
         instructionsLabel.font = Font(Font.SANS_SERIF, Font.BOLD, 20)
@@ -132,6 +137,10 @@ class GUI : JFrame(), KeyListener {
         instructionsList.font = baseFont
         add(instructionsList)
 
+        /**
+         * Task Bar table
+         */
+
         taskBarLabel = JLabel("TASK BAR:", SwingConstants.CENTER)
         taskBarLabel.bounds = Rectangle(420,35,200,20)
         taskBarLabel.font = Font(Font.SANS_SERIF, Font.BOLD, 20)
@@ -149,6 +158,10 @@ class GUI : JFrame(), KeyListener {
         taskList.bounds = Rectangle(400, 60, 250, 100)
         taskList.font = baseFont
         add(taskList)
+
+        /**
+         * Player Icon
+         */
 
         userLabel = JLabel("\uD83C\uDFC0", SwingConstants.CENTER)
         userLabel.font = Font(Font.SANS_SERIF, Font.PLAIN, 30)
@@ -178,6 +191,10 @@ class GUI : JFrame(), KeyListener {
             if (col < tableSize - 1) matchs[i].east = matchs[i + 1]
         }
     }
+
+    /**
+     * Movement
+     */
 
     override fun keyPressed(e: KeyEvent) {
         when (e.keyCode) {
@@ -279,6 +296,7 @@ class GUI : JFrame(), KeyListener {
 
     /**
      * Reset everything for a new game.
+     * Reset the game
      */
     private fun newGame() {
         currentMatch = matchs[0]
@@ -301,6 +319,7 @@ class GUI : JFrame(), KeyListener {
 
 /**
  * Launch the application.
+ * Launch app
  */
 fun main() {
     FlatDarkLaf.setup()
