@@ -22,7 +22,6 @@ import javax.swing.*
 //=============================================================================================
 
 /**
- * Team class representing a match with possible directions to move.
  * Match class representing the player with possible directions to move.
  */
 class Match(val name: String, val x: Int, val y: Int) {
@@ -295,7 +294,6 @@ class GUI : JFrame(), KeyListener {
     }
 
     /**
-     * Reset everything for a new game.
      * Reset the game
      */
     private fun newGame() {
@@ -318,7 +316,6 @@ class GUI : JFrame(), KeyListener {
 }
 
 /**
- * Launch the application.
  * Launch app
  */
 fun main() {
